@@ -73,8 +73,18 @@ How did you decide to implement your solution.
 
 **Good luck!**
 # Google Form
+
 https://forms.gle/A8CaByv4ohfrCmmWA
+
+
+
 
 <p align="center">
   <img src="https://github.com/teamrudra/r25-test/blob/main/datasheets/feynman-simple.jpg" width="600" height="600"/>
 </p>
+
+# My intel from the project 
+ there were things that were understandable to a certain level, things like - where you had to change the size from 50 to queuesize condidering 50 was acting as a magic number? - these were changes required in the read file 
+
+Things where you had to intialize the value and offset to 1 the error being it wasnt declared in the beginning- that being a bug 
+AI did a lot of insightful work considering you have to provide all the header files while making changes in a subfolder
