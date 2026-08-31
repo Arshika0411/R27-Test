@@ -207,3 +207,8 @@ int main(){
 
 
 }
+cmake -S . -B build
+
+cmake --build build --verbose
+
+./build/queue_test
