@@ -41,17 +41,12 @@ int rwlock_init(ReadWrite_Lock *rw){
  */
 void reader_enter(ReadWrite_Lock *lock){
     pthread_mutex_lock(&lock->writer_count);
-
     pthread_mutex_lock(&lock->reader_count);
-
     lock->reader++;
-
-    if (lock->reader != 1) {
-        // TODO: Complete reader entry logic
+    if (lock->reader == 1) {           // was: != 1  (inverted)
+        sem_wait(&lock->resource);     // was: missing entirely
     }
-
     pthread_mutex_unlock(&lock->reader_count);
-
     pthread_mutex_unlock(&lock->writer_count);
 }
 
