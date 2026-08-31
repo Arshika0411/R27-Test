@@ -86,5 +86,9 @@ https://forms.gle/A8CaByv4ohfrCmmWA
 # My intel from the project 
  there were things that were understandable to a certain level, things like - where you had to change the size from 50 to queuesize condidering 50 was acting as a magic number? - these were changes required in the read file 
 
-Things where you had to intialize the value and offset to 1 the error being it wasnt declared in the beginning- that being a bug 
+Things where you had to intialize the value and offset to 1 the error being it wasnt declared in the beginning- 
+that being a bug 
 AI did a lot of insightful work considering you have to provide all the header files while making changes in a subfolder
+Using AI did tell me I really need to start upskilling because i felt stupid throughout some things were understandable
+
+Basic bugs- when the end value wasnt declared by adding the length value and the start one as well in the encoder and decoder
